@@ -1,0 +1,35 @@
+@font-face {
+    font-family: "Regular";
+    font-style: normal;
+    font-weight: normal;
+    
+    src: url('./Lato-Regular.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Italic";
+    font-style: normal;
+    font-weight: normal;
+    
+    src: url('./Lato-Italic.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bold";
+    font-style: normal;
+    font-weight: normal;
+    
+    src: url('./Lato-Bold.ttf');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "BoldItalic";
+    font-style: normal;
+    font-weight: normal;
+    
+    src: url('./Lato-BoldItalic.ttf');
+    font-display: swap;
+}

@@ -1,0 +1,15 @@
+@mixin coverImage($url: null) {
+    @if url {
+        background: url($url) no-repeat center center;
+    }
+    
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@mixin gridPosition($position) {
+	display: grid;
+    place-items: $position;
+}

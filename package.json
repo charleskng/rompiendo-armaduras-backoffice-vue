@@ -1,0 +1,36 @@
+{
+    "name": "rompiendo-armaduras-backoffice-vue",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "postinstall": "npx patch-package",
+        "patch": "npx patch-package",
+        "dev": "vite",
+        "qa": "vite build --mode qa",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "boxicons": "^2.1.4",
+        "chart.js": "^3.9.1",
+        "element-plus": "^2.5.6",
+        "moment": "^2.30.1",
+        "pinia": "^2.1.7",
+        "pinia-plugin-persist": "^1.0.0",
+        "vue": "^3.4.15",
+        "vue-chart-3": "^3.1.8",
+        "vue-router": "^4.2.5",
+        "vue-screen": "^2.3.2",
+        "vue-upload-component": "^3.1.8",
+        "vuedraggable": "^4.1.0"
+    },
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.3",
+        "autoprefixer": "^10.4.17",
+        "postcss": "^8.4.35",
+        "sass": "^1.70.0",
+        "vite": "^5.1.0",
+        "vite-plugin-pwa": "^0.18.0"
+    }
+}
