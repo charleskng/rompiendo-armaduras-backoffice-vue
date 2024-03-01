@@ -178,7 +178,7 @@
                 action: ''
             })
             
-            const imageDefault = `${import.meta.env.VITE_STORAGE}/images/forum/default.png` 
+            let imageDefault = `${import.meta.env.VITE_STORAGE}/images/forum/default.png` 
             let image = ref(imageDefault)
             let image_files = reactive([])
             let upload_endpoint = ref(`${import.meta.env.VITE_API_SYSTEM_URL}/forum/image/${route.params.id}`)

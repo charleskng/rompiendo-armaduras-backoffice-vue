@@ -49,8 +49,8 @@
                                     </div>
                                 </template>
                                 <template #default="scope" v-if="item.key == 'image'">
-                                    <img v-if="scope.row.image" :src="scope.row.image" width="100" onerror="this.src='/sistema/images/multidisciplinary_intervention/default.png';" />
-                                    <img v-else src="/sistema/images/multidisciplinary_intervention/default.png" width="100" />
+                                    <img v-if="scope.row.image" :src="scope.row.image" width="100" />
+                                    <img v-else :src="imageDefault" width="100" />
                                 </template>
                             </el-table-column>
                         </el-table>
@@ -62,7 +62,7 @@
 </template>
 
 <script>
-    import { reactive, inject, onMounted } from 'vue'
+    import { reactive, ref, inject, onMounted } from 'vue'
     import { useRouter, useRoute } from 'vue-router'
     import { ElLoading, ElMessage, ElMessageBox } from 'element-plus'
     import { useAppStore } from '@/stores/app'
@@ -81,6 +81,7 @@
             const request = inject('request')
 
             // state
+            let imageDefault = ref(`${import.meta.env.VITE_STORAGE}/images/multidisciplinary_intervention/default.png`)
             let list = reactive([])
             let table_columns = reactive([
                 {
@@ -237,6 +238,7 @@
             // return component
             return {
                 // state
+                imageDefault,
                 list, 
                 table_columns, 
                 // actions

@@ -48,8 +48,8 @@
 
                 <el-row justify="center">
                     <div style="margin-bottom: 20px;">
-                        <img v-if="image" :src="image" width="600" onerror="this.src='/sistema/images/multidisciplinary_intervention/default.png';" />
-                        <img v-else src="/sistema/images/multidisciplinary_intervention/default.png" width="600" />
+                        <img v-if="image" :src="image" width="600" />
+                        <img v-else :src="imageDefault" width="600" />
                     </div>
                 </el-row>
 
@@ -103,6 +103,7 @@
             const request = inject('request')
 
             // Refs
+            let imageDefault = ref(`${import.meta.env.VITE_STORAGE}/images/multidisciplinary_intervention/default.png`)
             let upload = ref(null)
 
             // state
@@ -348,6 +349,7 @@
             // return component
             return {
                 // state 
+                imageDefault,
                 form,
                 image, 
                 image_files, 

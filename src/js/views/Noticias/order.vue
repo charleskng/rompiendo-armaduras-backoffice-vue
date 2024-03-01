@@ -25,8 +25,8 @@
                                 {{ element.title }}
                             </el-col>
                             <el-col :sapn="24" class="text-center">
-                                <img v-if="element.image" :src="element.image" width="100" onerror="this.src='/sistema/images/news/default.png';" />
-                                <img v-else src="/sistema/images/news/default.png" width="100" />
+                                <img v-if="element.image" :src="element.image" width="100" />
+                                <img v-else :src="imageDefault" width="100" />
                             </el-col>
                         </el-row>
                     </template>
@@ -45,7 +45,7 @@
 </template>
 
 <script>
-    import { reactive, inject, onMounted } from 'vue'
+    import { reactive, ref, inject, onMounted } from 'vue'
     import { useRouter } from 'vue-router'
     import { ElLoading, ElMessage } from 'element-plus'
     import { useAppStore } from '@/stores/app'
@@ -68,6 +68,7 @@
             const request = inject('request')
 
             // state
+            let imageDefault = ref(`${import.meta.env.VITE_STORAGE}/images/news/default.png`)
             let list = reactive([])
 
             // actions
@@ -211,6 +212,7 @@
             // return component
             return {
                 // state
+                imageDefault,
                 list, 
                 // actions
                 endDraggable, 
