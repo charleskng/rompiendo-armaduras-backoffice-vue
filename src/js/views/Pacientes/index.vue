@@ -180,7 +180,7 @@
                 if (response.data.list !== null) {
                     response.data.list.forEach((consultant) => {
                         consultant.image = `${import.meta.env.VITE_STORAGE}${
-                            consultant.image || '/sistema/images/consultant/default.png'
+                            consultant.image || '/images/consultant/default.png'
                         }`
                     })
                     
@@ -261,7 +261,7 @@
         .image_container {
 
             .image_content {
-                @include coverImage("/sistema/images/consultant/default.png");
+                @include coverImage();
 
                 width: 100px;
                 height: 100px;
