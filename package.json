@@ -7,7 +7,7 @@
         "postinstall": "npx patch-package",
         "patch": "npx patch-package",
         "dev": "vite",
-        "qa": "vite build --mode qa",
+        "qa": "vite --mode qa",
         "build": "vite build",
         "preview": "vite preview"
     },

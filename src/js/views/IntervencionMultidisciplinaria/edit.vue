@@ -48,8 +48,8 @@
 
                 <el-row justify="center">
                     <div style="margin-bottom: 20px;">
-                        <img v-if="image" :src="image" width="600" onerror="this.src='/images/multidisciplinary_intervention/default.png';" />
-                        <img v-else src="/images/multidisciplinary_intervention/default.png" width="600" />
+                        <img v-if="image" :src="image" width="600" onerror="this.src='/sistema/images/multidisciplinary_intervention/default.png';" />
+                        <img v-else src="/sistema/images/multidisciplinary_intervention/default.png" width="600" />
                     </div>
                 </el-row>
 

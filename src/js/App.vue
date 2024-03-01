@@ -21,7 +21,7 @@
 
                     <el-col :span="12" class="col-center">
                         <div class="cursor-pointer" @click="navigate('Home')">
-                            <img src="/images/brand/logo_white.png" alt="logo_white" class="logo">
+                            <img src="/sistema/images/brand/logo_white.png" alt="logo_white" class="logo">
                         </div>
                     </el-col>
 
@@ -113,86 +113,86 @@
                 {
                     path: '/',
                     name: 'Inicio', 
-                    image: '/svg/icons_white/home.svg', 
-                    image_active: '/svg/icons/home.svg', 
+                    image: '/sistema/svg/icons_white/home.svg', 
+                    image_active: '/sistema/svg/icons/home.svg', 
                 },
                 {
                     path: '/pacientes',
                     name: 'Mis Pacientes', 
-                    image: '/svg/icons_white/pacientes.svg', 
-                    image_active: '/svg/icons/pacientes.svg', 
+                    image: '/sistema/svg/icons_white/pacientes.svg', 
+                    image_active: '/sistema/svg/icons/pacientes.svg', 
                 },
                 {
                     path: '/citas',
                     name: 'Mis Citas', 
-                    image: '/svg/icons_white/citas.svg', 
-                    image_active: '/svg/icons/citas.svg', 
+                    image: '/sistema/svg/icons_white/citas.svg', 
+                    image_active: '/sistema/svg/icons/citas.svg', 
                 },
                 {
                     path: '/recetas',
                     name: 'Mis Recetas', 
-                    image: '/svg/icons_white/recetas.svg', 
-                    image_active: '/svg/icons/recetas.svg', 
+                    image: '/sistema/svg/icons_white/recetas.svg', 
+                    image_active: '/sistema/svg/icons/recetas.svg', 
                 },
                 {
                     path: '/alimentos',
                     name: 'Alimentos', 
-                    image: '/svg/icons_white/alimentos.svg', 
-                    image_active: '/svg/icons/alimentos.svg', 
+                    image: '/sistema/svg/icons_white/alimentos.svg', 
+                    image_active: '/sistema/svg/icons/alimentos.svg', 
                 },
                 {
                     path: '/perfil_medico',
                     name: 'Perfil Médico', 
-                    image: '/svg/icons_white/perfil_medico.svg', 
-                    image_active: '/svg/icons/perfil_medico.svg', 
+                    image: '/sistema/svg/icons_white/perfil_medico.svg', 
+                    image_active: '/sistema/svg/icons/perfil_medico.svg', 
                 },
                 {
                     path: '/plan_nutricional',
                     name: 'Planes Nutricionales', 
-                    image: '/svg/icons_white/plan_alimenticio.svg', 
-                    image_active: '/svg/icons/plan_alimenticio.svg', 
+                    image: '/sistema/svg/icons_white/plan_alimenticio.svg', 
+                    image_active: '/sistema/svg/icons/plan_alimenticio.svg', 
                 },
                 {
                     path: '/aporte_nutrimental',
                     name: 'Aporte Nutrimental', 
-                    image: '/svg/icons_white/aporte_nutrimental.svg', 
-                    image_active: '/svg/icons/aporte_nutrimental.svg', 
+                    image: '/sistema/svg/icons_white/aporte_nutrimental.svg', 
+                    image_active: '/sistema/svg/icons/aporte_nutrimental.svg', 
                 },
                 {
                     path: '/membresia',
                     name: 'Membresía', 
-                    image: '/svg/icons_white/membresia.svg', 
-                    image_active: '/svg/icons/membresia.svg', 
+                    image: '/sistema/svg/icons_white/membresia.svg', 
+                    image_active: '/sistema/svg/icons/membresia.svg', 
                 },
                 {
                     path: '/noticias',
                     name: 'Noticias', 
-                    image: '/svg/icons_white/noticias.svg', 
-                    image_active: '/svg/icons/noticias.svg', 
+                    image: '/sistema/svg/icons_white/noticias.svg', 
+                    image_active: '/sistema/svg/icons/noticias.svg', 
                 },
                 {
                     path: '/foro',
                     name: 'Foro', 
-                    image: '/svg/icons_white/foro.svg', 
-                    image_active: '/svg/icons/foro.svg', 
+                    image: '/sistema/svg/icons_white/foro.svg', 
+                    image_active: '/sistema/svg/icons/foro.svg', 
                 },
                 {
                     path: '/intervencion_multidisciplinaria',
                     name: 'Intervención Multi-disciplinaria', 
-                    image: '/svg/icons_white/intervencion.svg', 
-                    image_active: '/svg/icons/intervencion.svg', 
+                    image: '/sistema/svg/icons_white/intervencion.svg', 
+                    image_active: '/sistema/svg/icons/intervencion.svg', 
                 },
                 {
                     path: '/documentos',
                     name: 'Documentos', 
-                    image: '/svg/icons_white/documentos.svg', 
-                    image_active: '/svg/icons/documentos.svg', 
+                    image: '/sistema/svg/icons_white/documentos.svg', 
+                    image_active: '/sistema/svg/icons/documentos.svg', 
                 }, 
                 {
                 path: '/patologias',
                 name: 'Patologías',
-                image: '/svg/icons_white/patologias.svg',
-                image_active: '/svg/icons/patologias.svg', 
+                image: '/sistema/svg/icons_white/patologias.svg',
+                image_active: '/sistema/svg/icons/patologias.svg', 
             },
             ])
             

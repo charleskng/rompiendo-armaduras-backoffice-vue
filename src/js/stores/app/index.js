@@ -36,8 +36,8 @@ export const useAppStore = defineStore('appStore', {
             // when no session is found
             if (this.session == null) {
                 // redirect to home
-                document.location.href = "/"
-
+                document.location.href = "/sistema/"
+                
                 // reset session
                 this.user = null
                 this.profile = null
@@ -63,7 +63,7 @@ export const useAppStore = defineStore('appStore', {
             }
             
             // redirect to home
-            document.location.href = "/"
+            document.location.href = "/sistema/"
             
             // reset session
             this.user = null

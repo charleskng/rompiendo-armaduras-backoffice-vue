@@ -54,67 +54,67 @@ export default {
             {
                 path: '/pacientes',
                 name: 'Mis Pacientes',
-                image: '/svg/icons_white/pacientes.svg',
+                image: '/sistema/svg/icons_white/pacientes.svg',
             },
             {
                 path: '/citas',
                 name: 'Mis Citas',
-                image: '/svg/icons_white/citas.svg',
+                image: '/sistema/svg/icons_white/citas.svg',
             },
             {
                 path: '/recetas',
                 name: 'Mis Recetas',
-                image: '/svg/icons_white/recetas.svg',
+                image: '/sistema/svg/icons_white/recetas.svg',
             },
             {
                 path: '/alimentos',
                 name: 'Alimentos',
-                image: '/svg/icons_white/alimentos.svg',
+                image: '/sistema/svg/icons_white/alimentos.svg',
             },
             {
                 path: '/perfil_medico',
                 name: 'Perfil Médico',
-                image: '/svg/icons_white/perfil_medico.svg',
+                image: '/sistema/svg/icons_white/perfil_medico.svg',
             },
             {
                 path: '/plan_nutricional',
                 name: 'Planes Nutricionales',
-                image: '/svg/icons_white/plan_alimenticio.svg',
+                image: '/sistema/svg/icons_white/plan_alimenticio.svg',
             },
             {
                 path: '/aporte_nutrimental',
                 name: 'Aporte Nutrimental',
-                image: '/svg/icons_white/aporte_nutrimental.svg',
+                image: '/sistema/svg/icons_white/aporte_nutrimental.svg',
             },
             {
                 path: '/membresia',
                 name: 'Membresía',
-                image: '/svg/icons_white/membresia.svg',
+                image: '/sistema/svg/icons_white/membresia.svg',
             },
             {
                 path: '/noticias',
                 name: 'Noticias',
-                image: '/svg/icons_white/noticias.svg',
+                image: '/sistema/svg/icons_white/noticias.svg',
             },
             {
                 path: '/foro',
                 name: 'Foro',
-                image: '/svg/icons_white/foro.svg',
+                image: '/sistema/svg/icons_white/foro.svg',
             },
             {
                 path: '/intervencion_multidisciplinaria',
                 name: 'Intervención Multi-disciplinaria',
-                image: '/svg/icons_white/intervencion.svg',
+                image: '/sistema/svg/icons_white/intervencion.svg',
             },
             {
                 path: '/documentos',
                 name: 'Documentos',
-                image: '/svg/icons_white/documentos.svg',
+                image: '/sistema/svg/icons_white/documentos.svg',
             },
             {
                 path: '/patologias',
                 name: 'Patologías',
-                image: '/svg/icons_white/patologias.svg',
+                image: '/sistema/svg/icons_white/patologias.svg',
             },
         ])
 

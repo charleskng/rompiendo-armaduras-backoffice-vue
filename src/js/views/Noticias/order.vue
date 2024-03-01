@@ -25,8 +25,8 @@
                                 {{ element.title }}
                             </el-col>
                             <el-col :sapn="24" class="text-center">
-                                <img v-if="element.image" :src="element.image" width="100" onerror="this.src='/images/news/default.png';" />
-                                <img v-else src="/images/news/default.png" width="100" />
+                                <img v-if="element.image" :src="element.image" width="100" onerror="this.src='/sistema/images/news/default.png';" />
+                                <img v-else src="/sistema/images/news/default.png" width="100" />
                             </el-col>
                         </el-row>
                     </template>

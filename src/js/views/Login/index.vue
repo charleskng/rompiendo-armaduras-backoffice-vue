@@ -5,7 +5,7 @@
                 <div class="header-form">
                     <el-row justify="center" class="header-form-content">
                         <el-col :span="24">
-                            <img src="/images/brand/logo.png" alt="logo">
+                            <img src="/sistema/images/brand/logo.png" alt="logo">
                         </el-col>
                     </el-row>
                 </div>
@@ -119,7 +119,6 @@
                     },
                     query: {
                         timestamp: (new Date()).getTime(),
-                        test: true
                     }
                 })
 
@@ -201,7 +200,7 @@
             width: 100%;
             height: 100%;
 
-            @include coverImage("/images/login/background.jpg");
+            @include coverImage("/sistema/images/login/background.jpg");
             filter: opacity(70%);
         }
 

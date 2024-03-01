@@ -49,8 +49,8 @@
                                     </div>
                                 </template>
                                 <template #default="scope" v-if="item.key == 'image'">
-                                    <img v-if="scope.row.image" :src="scope.row.image" width="100" onerror="this.src='/images/multidisciplinary_intervention/default.png';" />
-                                    <img v-else src="/images/multidisciplinary_intervention/default.png" width="100" />
+                                    <img v-if="scope.row.image" :src="scope.row.image" width="100" onerror="this.src='/sistema/images/multidisciplinary_intervention/default.png';" />
+                                    <img v-else src="/sistema/images/multidisciplinary_intervention/default.png" width="100" />
                                 </template>
                             </el-table-column>
                         </el-table>
