@@ -168,6 +168,16 @@
                         </el-select>
                     </el-form-item>
 
+                    <el-form-item label="Mostrar Cantidades en Alimentos">
+                        <el-select
+                            v-model="form.show_food_quantity"
+                            style="width: 100%;"
+                        >
+                            <el-option label="Activo" value="Activo" />
+                            <el-option label="Inactivo" value="Inactivo" />
+                        </el-select>
+                    </el-form-item>
+
                     <el-form-item label="Estatus">
                         <el-select
                             v-model="form.active"
@@ -249,6 +259,7 @@
                 gender: '',
                 job: '',
                 main_ailment: '', 
+                show_food_quantity: 'Inactivo',
                 active: 'Activo', 
                 questions: []
             })
@@ -503,8 +514,9 @@
                 form.gender = response.data.profile.gender
                 form.job = response.data.profile.job
                 form.main_ailment = response.data.profile.main_ailment
+                form.show_food_quantity = Number(response.data.profile.show_food_quantity) ? 'Activo' : 'Inactivo'
                 form.active = response.data.user.active ? 'Activo' : 'Inactivo'
-
+                
                 for(let item of form.questions) {
                     let found = false
 
@@ -563,7 +575,8 @@
                         body: {
                             ...form,
                             birthday: moment(form.birthday).format('YYYY-MM-DD 00:00:00'), 
-                            active: form.active == 'Activo'
+                            active: form.active == 'Activo',
+                            show_food_quantity: form.show_food_quantity == 'Activo',
                         }
                     })
                     

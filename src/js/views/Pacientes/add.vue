@@ -101,6 +101,16 @@
                             />
                         </el-select>
                     </el-form-item>
+
+                    <el-form-item label="Mostrar Cantidades en Alimentos">
+                        <el-select
+                            v-model="form.show_food_quantity"
+                            style="width: 100%;"
+                        >
+                            <el-option label="Activo" value="Activo" />
+                            <el-option label="Inactivo" value="Inactivo" />
+                        </el-select>
+                    </el-form-item>
                 </el-form>
 
                 <el-row>
@@ -166,7 +176,8 @@
                 gender: '',
                 job: '',
                 main_ailment: '', 
-                questions: []
+                show_food_quantity: 'Inactivo',
+                questions: [],
             })
 
             let memberships = reactive([])
@@ -390,10 +401,11 @@
                         body: {
                             ...form, 
                             birthday: moment(form.birthday).format('YYYY-MM-DD 00:00:00'), 
-                            birthday: moment(form.birthday).format('YYYY-MM-DD')
+                            birthday: moment(form.birthday).format('YYYY-MM-DD'),
+                            show_food_quantity: form.show_food_quantity == 'Activo',
                         }
                     })
-
+                    
                     // request error
                     if(!response.success) {
                         ElMessage.error('No se ha logrado crear el perfil del paciente, intente nuevamente por favor')

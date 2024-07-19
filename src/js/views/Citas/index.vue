@@ -133,16 +133,9 @@ export default {
         let list = reactive([])
         let table_columns = reactive([
             {
-                key: 'id',
-                label: '#',
-                width: 60,
-                fixed: true
-            },
-            {
-                key: 'actions',
-                label: 'Acciones',
+                key: 'date',
+                label: 'Hora',
                 width: 140,
-                fixed: true
             },
             {
                 key: 'image',
@@ -154,19 +147,19 @@ export default {
                 label: 'Nombre'
             },
             {
+                key: 'note',
+                label: 'Notas'
+            },
+            {
                 key: 'review',
                 label: 'Revisión',
                 width: 140,
             },
             {
-                key: 'note',
-                label: 'Notas'
-            },
-            {
-                key: 'date',
-                label: 'Hora',
+                key: 'actions',
+                label: 'Acciones',
                 width: 140,
-            }
+            },
         ])
 
         // actions
